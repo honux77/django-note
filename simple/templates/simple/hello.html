@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko">
+{% extends 'simple/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hello</title>
-</head>
-
-<body>
-    <div>
-        <h1>Simple, template</h1>
-        <p>안녕하세요? 저는 {{data.name}}이고 {{data.age}}세입니다.</p>
-    </div>
-    </div>
-</body>
-
-</html>
+{% block content %}
+<h1 class="cover-heading">Django Simple Demo</h1>
+<p class="lead">간단한 장고 메모장입니다.</p>
+<p class="lead">
+  <a href="{%url 'note'%}" class="btn btn-lg btn-secondary">게시글 보기</a>   
+  <a href="{%url 'write'%}" class="btn btn-lg btn-secondary">게시글 쓰기</a>   
+</p>
+{% endblock %}

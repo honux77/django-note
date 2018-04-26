@@ -4,8 +4,7 @@ from django.urls import reverse_lazy
 from .models import Note
 
 def hello(request):
-    people = {'name':'honux', 'age': 25}
-    return render(request, 'simple/hello.html', { 'data': people})
+    return render(request, 'simple/hello.html', {})
 
 def note(request):
     notes = Note.objects.all().order_by('-published_date')
