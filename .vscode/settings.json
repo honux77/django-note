@@ -1,2 +1,9 @@
 {
+    "python.pythonPath": "/Users/honux/anaconda3/envs/py3web/bin/python",
+    "python.venvPath": "/Users/honux/Anaconda3/envs",
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,   
 }
